@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\WebAspNetPractica_26_06_2024.props" />
+</Project>

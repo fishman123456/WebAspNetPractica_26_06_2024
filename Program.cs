@@ -32,7 +32,7 @@ app.MapDelete("mount/{id:int}", async (int id, ApplicationDbContext db) =>
     }
 });
 
-app.MapPost("/mount/{id:int}", async (int id, MountainPeaks mount, ApplicationDbContext db) =>
+app.MapPost("/mounts/{id:int}", async (int id, MountainPeaks mount, ApplicationDbContext db) =>
 {
     MountainPeaks update = await db.mountainPeaks.FirstOrDefaultAsync(p => p.id == id); 
     if (update != null)
